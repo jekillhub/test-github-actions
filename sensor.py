@@ -34,3 +34,8 @@ class Sensor:
         if dewPoint < fusionPoint:
             return False
         return True
+
+    @staticmethod
+    def sum(temperature, humidity):
+        """This function is only for testing the unit test framework. It haven't logic in the problem context."""
+        return temperature + humidity
