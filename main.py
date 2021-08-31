@@ -1,12 +1,14 @@
 from sensor import Sensor
 from pprint import pprint
 
-if __name__ == "__main__":
-  sensor_object = Sensor()
+class Main:
 
-  new_measure = {}
-  new_measure['temperature'] = sensor_object.get_random_temperature()
-  new_measure['humidity'] = sensor_object.get_random_humidity()
-  new_measure['atmospheric_pressure'] = sensor_object.get_random_atmospheric_pressure()
+  if __name__ == "__main__":
+    sensor_object = Sensor()
 
-  pprint(new_measure)
+    new_measure = {}
+    new_measure['temperature'] = sensor_object.get_random_temperature()
+    new_measure['humidity'] = sensor_object.get_random_humidity()
+    new_measure['atmospheric_pressure'] = sensor_object.get_random_atmospheric_pressure()
+
+    pprint(new_measure)
