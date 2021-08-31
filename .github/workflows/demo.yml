@@ -17,7 +17,9 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - run: echo "python --version"
+      - name: Get Python version
+        run: echo "python --version"
       - name: Run unit test
         run: python test-sensor.py
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Get job's status
+        run: echo "🍏 This job's status is ${{ job.status }}."
