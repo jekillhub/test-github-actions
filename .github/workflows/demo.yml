@@ -20,3 +20,4 @@ jobs:
           architecture: 'x64'
         run: python test-sensor.py
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo "python --version"
