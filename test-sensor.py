@@ -12,6 +12,7 @@ class TestSensor(unittest.TestCase):
 
         self.assertEqual(sensor_object.sum(temperature,humidity), temperature + humidity)
     
+    @unittest.skip
     def test_sum_fail(self):
         sensor_object = Sensor()
 
