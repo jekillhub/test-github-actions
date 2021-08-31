@@ -2,7 +2,17 @@ from sensor import Sensor
 import unittest
 
 class TestSensor(unittest.TestCase):
-    def test_sum(self):
+    
+    def test_sum_pass(self):
+        sensor_object = Sensor()
+
+        temperature = sensor_object.get_random_temperature()
+        humidity = sensor_object.get_random_humidity()
+        #atmospheric_pressure = sensor_object.get_random_atmospheric_pressure()
+
+        self.assertEqual(sensor_object.sum(temperature,humidity), temperature + humidity)
+    
+    def test_sum_fail(self):
         sensor_object = Sensor()
 
         temperature = sensor_object.get_random_temperature()
