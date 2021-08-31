@@ -18,7 +18,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - name: Get Python version
-        run: echo "python --version"
+        run: python --version
       - name: Run unit test
         run: python test-sensor.py
       - name: Get job's status
